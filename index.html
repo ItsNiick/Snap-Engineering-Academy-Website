@@ -2,37 +2,47 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>Hearthstone Card Data Visualizaiton</title>
+    <meta name="description" content="A catalog of all cards from Hearthstone and their information (from 2017 and earlier)">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
     <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
+        <h1 class="title">Hearthstone Cards</h1>
     </header>
+
+    <div class="dropdown">
+        <div class="select">
+            <span class="selected">Class</span>
+            <div class="caret"></div>
+        </div>
+        <ul class="menu">
+            <li class="active">All</li>
+            <li>Warrior</li>
+            <li>Shaman</li>
+            <li>Rogue</li>
+            <li>Paladin</li>
+            <li>Hunter</li>
+            <li>Druid</li>
+            <li>Warlock</li>
+            <li>Mage</li>
+            <li>Priest</li>
+        </ul>
+    </div>
+
     <div id="card-container">
         
     </div>
     <div class="card" style="display: none;">
         <div class="card-content">
-            <h2>TV Show Title</h2>
+            <h2>Class Names</h2>
             <img src="" alt="TV Show Poster">
             <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
+                <li>Total Cards: </li>
             </ul>
         </div>
-    </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
-        </button>
     </div>
 </body>
 
